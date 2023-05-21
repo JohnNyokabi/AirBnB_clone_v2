@@ -8,7 +8,7 @@ app = Flask(__name__)
 @app.route("/airbnb-onepage/", strict_slashes=False)
 def hello_hbnb():
     """Displays 'Hello HBNB!'"""
-    return render_template("10-hbnb_filters.html")
+    return render_template("5-number.html")
 
 
 if __name__ == "__main__":
