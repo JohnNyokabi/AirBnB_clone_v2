@@ -1,14 +1,14 @@
 #!/usr/bin/python3
 """ Script that starts a Flask web application"""
-from flask import Flask
-
+from flask import Flask, render_template
+ 
 app = Flask(__name__)
 
 
 @app.route("/airbnb-onepage/", strict_slashes=False)
 def hello_hbnb():
     """Displays 'Hello HBNB!'"""
-    return "Hello HBNB!"
+    return render_template("10-hbnb_filters.html")
 
 
 if __name__ == "__main__":
